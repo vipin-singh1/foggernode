@@ -44,7 +44,8 @@ class PiStats(object):
 
   def get_memory_info(self):
     # In linux the cached memory is available for program use so we'll
-    # include it in the free amount when calculating the usage percent
+    # include it in the free amount when calculating the usage percent. 
+    # and the program will work
     used_val = (self.total_memory - self.free_memory)
     free_val = (self.free_memory)
     percent_val = float(used_val - self.cached_memory) / float(self.total_memory)
