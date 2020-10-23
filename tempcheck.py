@@ -65,7 +65,7 @@ try:
   while True:
     cpu_info = stats.get_cpu_info()
     print "CPU Usage:\t%i%%"%(cpu_info['percent']) 
-    time.sleep(2);
+    time.sleep(3);
     stats.update_stats()
 except KeyboardInterrupt:
   print "Exiting.\n"
