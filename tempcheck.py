@@ -14,7 +14,7 @@ class PiStats(object):
     active_diff = self.currentCPUInfo['active'] - self.lastCPUInfo['active']
     return round(float(active_diff) / float(total_diff), 3) * 100.00
 
-  def update_stats(self):
+  def update_stat(self):
     # Read memory usage from /proc/meminfo
     with open('/proc/meminfo', 'r') as mem_file:
       # Remove the text description, kB, and whitespace before
